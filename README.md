@@ -36,7 +36,7 @@ The cli tool will help you setup a **laravel-echo-server.json** file in the root
 The Laravel Echo Server exposes a light http API to perform broadcasting functionality. For security purposes, access to these endpoints from http referrers must be authenticated with an API id and key. This can be generated using the cli command:
 
 ``` shell
-$ laravel-echo-server client:add APP_ID
+$ lecos client:add APP_ID
 ```
 
 If you run `client:add` without an app id argument, one will be generated for you. After running this command, the client id and key will be displayed and stored in the **laravel-echo-server.json** file.
@@ -53,14 +53,14 @@ or
 http://app.dev:6001/apps/APP_ID/channels?auth_key=skti68i...
 ```
 
-You can remove clients with `laravel-echo-server client:remove APP_ID`
+You can remove clients with `lecos client:remove APP_ID`
 
 #### Run The Server
 
 in your project root directory, run
 
 ``` shell
-$ laravel-echo-server start
+$ lecos start
 ```
 
 #### Stop The Server
@@ -68,7 +68,7 @@ $ laravel-echo-server start
 in your project root directory, run
 
 ``` shell
-$ laravel-echo-server stop
+$ lecos stop
 ```
 
 ### Configurable Options
