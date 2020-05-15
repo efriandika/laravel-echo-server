@@ -18,7 +18,7 @@ official docs: <https://laravel.com/docs/master/broadcasting>
 Install npm package globally with the following command:
 
 ``` shell
-$   npm install -g laravel-echo-server
+$   npm install -g @efriandika/laravel-echo-server
 ```
 
 ### Initialize with CLI Tool
@@ -26,7 +26,7 @@ $   npm install -g laravel-echo-server
 Run the init command in your project directory:
 
 ``` shell
-$   laravel-echo-server init
+$   lecos init
 ```
 
 The cli tool will help you setup a **laravel-echo-server.json** file in the root directory of your project. This file will be loaded by the server during start up. You may edit this file later on to manage the configuration of your server.
@@ -278,7 +278,7 @@ For example, if you wanted to pass a custom configuration to Redis:
 *A full list of Redis options can be found [here](https://github.com/luin/ioredis/blob/master/API.md#new-redisport-host-options).*
 
 ### Redis sentinel
-For example, if you wanted to use redis-sentinel, you need to pass a custom configuration : 
+For example, if you wanted to use redis-sentinel, you need to pass a custom configuration :
 
 ``` json
  "databaseConfig": {
@@ -301,7 +301,7 @@ For example, if you wanted to use redis-sentinel, you need to pass a custom conf
        "sentinelPassword": "redis-password"
      },
    },
- ``` 
+ ```
 *For more information about redis sentinel configuration you can check [this](https://github.com/luin/ioredis#sentinel)*
 ### SQLite
 
